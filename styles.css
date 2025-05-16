@@ -330,6 +330,13 @@ main p,
   color: var(--color-secondary);
 }
 
+.linkhome {
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
 .item-imagem p {
   font-size: 0.95rem;
   color: var(--color-text-muted);
