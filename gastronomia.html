@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viagens ao Amazonas - Gastronomia</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+     <header>
+    <h1 class="logo">Gastronomia</h1>
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pontos_turisticos.html">Pontos Turísticos</a></li>
+        <li><a href="hospedagens.html">Hospedagens</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+        <article class="prato">
+            <img src="imagens/tambacqui_assado.jpg" alt="Tambaqui Assado" style="width:250px; height:auto; float:left; margin-right:20px;" />
+            <div>
+                <h2>Tambaqui Assado</h2>
+                <p>Peixe típico da região, preparado assado, com sabor marcante. Geralmente acompanhado de farofa e vinagrete.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </article>
+
+        <article class="prato">
+            <img src="imagens/tacaca.jpg" alt="Tacacá" style="width:250px; height:auto; float:left; margin-right:20px;" />
+            <div>
+                <h2>Tacacá</h2>
+                <p>Sopa quente feita com tucupi, goma de mandioca, jambu (erva que causa sensação de dormência) e camarões.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </article>
+
+        <article class="prato">
+            <img src="imagens/pirarucu_de_casaca.jpg" alt="Pirarucu de Casaca" style="width:250px; height:auto; float:left; margin-right:20px;" />
+            <div>
+                <h2>Pirarucu de Casaca</h2>
+                <p>Conhecido como \"bacalhau da Amazônia\", prato feito com camadas de banana, farinha e temperos regionais, tradicional em festas locais.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </article>
+
+        <article class="prato">
+            <img src="imagens/acai.jpg" alt="Açaí" style="width:250px; height:auto; float:left; margin-right:20px;" />
+            <div>
+                <h2>Açaí</h2>
+                <p>Consumido tradicionalmente com farinha de tapioca ou farinha d’água, geralmente acompanhado de pratos salgados.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 Viagens ao Amazonas - contato@viagensaoamazonas.com</p>
+    </footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

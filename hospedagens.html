@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Viagens ao Amazonas - Hospedagens</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+    <h1 class="logo">Hospedagens</h1>
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pontos_turisticos.html">Pontos Turísticos</a></li>
+        <li><a href="hospedagens.html">Hospedagens</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+        <article class="hospedagem">
+            <img src="imagens/hotel_tropical.jpg" alt="Hotel Tropical Manaus" style="width:250px; height:auto; float:left; margin-right:20px;" />
+            <div>
+                <h2>Tropical Executive Hotel</h2>
+                <p><strong>Preço:</strong> A partir de R$ 450,00 / diária</p>
+                <p><strong>Avaliação:</strong> ★★★★☆ (4,3/5)</p>
+                <p>Um dos maiores hotéis da região, com infraestrutura completa, piscina e acesso à praia fluvial.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </article>
+
+        <article class="hospedagem">
+            <img src="imagens/juma_lodge.jpg" alt="Juma Amazon Lodge" style="width:250px; height:auto; float:left; margin-right:20px;" />
+            <div>
+                <h2>Juma Amazon Lodge</h2>
+                <p><strong>Preço:</strong> A partir de R$ 600,00 / diária</p>
+                <p><strong>Avaliação:</strong> ★★★★★ (4,8/5)</p>
+                <p>Pousada ecológica localizada dentro da floresta, ideal para quem busca contato direto com a natureza.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </article>
+
+        <article class="hospedagem">
+            <img src="imagens/go_inn.jpg" alt="Go Inn Manaus" style="width:250px; height:auto; float:left; margin-right:20px;" />
+            <div>
+                <h2>Go Inn Manaus</h2>
+                <p><strong>Preço:</strong> A partir de R$ 150,00 / diária</p>
+                <p><strong>Avaliação:</strong> ★★★☆☆ (3,7/5)</p>
+                <p>Opção econômica, localizada no centro, próxima aos principais pontos turísticos.</p>
+            </div>
+            <div style="clear:both;"></div>
+        </article>
+    </main>
+    <footer>
+        <p>© 2025 Viagens ao Amazonas - contato@viagensaoamazonas.com</p>
+    </footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

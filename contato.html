@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viagens ao Amazonas - Contato</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <header>
+    <h1 class="logo">Contato</h1>
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pontos_turisticos.html">Pontos Turísticos</a></li>
+        <li><a href="hospedagens.html">Hospedagens</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-info" style="display: flex; flex-direction: column; align-items: center; gap: 10px;">
+      <h2>Fale Conosco</h2>
+      <p>Se você deseja saber mais sobre as viagens ao Amazonas, entre em contato através dos nossos canais:</p>
+      <p><strong>Email:</strong> contato@viagensamazonas.com.br</p>
+      <p><strong>Telefone:</strong> (92) 3333-4444</p>
+      <p><strong>Endereço:</strong> Rua das Flores, 123 - Manaus, AM</p>
+      <p>Estamos disponíveis para tirar dúvidas, fornecer mais informações sobre pacotes de viagens e ajudar você a planejar sua experiência inesquecível na Amazônia!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Viagens ao Amazonas. Todos os direitos reservados.</p>
+    <p>Contato: contato@viagensamazonas.com.br</p>
+  </footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Viagens ao Amazonas - Pontos Turísticos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+   <header>
+    <h1 class="logo">Pontos Turísticos</h1>
+
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger"></span>
+    </button>
+
+    <nav id="nav-menu">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pontos_turisticos.html">Pontos Turísticos</a></li>
+        <li><a href="hospedagens.html">Hospedagens</a></li>
+        <li><a href="gastronomia.html">Gastronomia</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tourist-spot">
+      <div class="images">
+        <img src="imagens/encontro_das_aguas_1.jpg" alt="Encontro das Águas - Vista Aérea" />
+        <img src="imagens/encontro_das_aguas_2.jpg" alt="Encontro das Águas - Barco" />
+      </div>
+      <div class="content">
+        <h2>Encontro das Águas</h2>
+        <p>
+          O Encontro das Águas é um dos fenômenos naturais mais impressionantes do mundo, onde os rios Negro e Solimões correm lado a lado por cerca de 6 km sem se misturarem, devido às diferenças de temperatura, densidade e velocidade das águas. 
+          Durante os passeios de barco, é possível observar essa divisão clara e ainda apreciar a fauna local, como botos-cor-de-rosa e aves típicas da região. 
+          Além disso, muitos passeios incluem trilhas pela floresta e visitas a comunidades ribeirinhas para conhecer melhor a cultura local.
+        </p>
+      </div>
+    </section>
+
+
+<section class="tourist-spot">
+  <div class="images">
+    <img src="imagens/teatro_amazonas_1.jpg" alt="Teatro Amazonas - Fachada" />
+    <img src="imagens/teatro_amazonas_2.jpg" alt="Teatro Amazonas - Interior" />
+  </div>
+  <div class="content">
+    <h2>Teatro Amazonas</h2>
+    <p>
+      Inaugurado em 1896, o Teatro Amazonas é um dos maiores símbolos do Ciclo da Borracha. 
+      Com uma arquitetura belíssima e detalhes luxuosos, o local ainda é palco de grandes eventos culturais, como óperas, peças teatrais e concertos. 
+      Além de assistir aos espetáculos, os visitantes podem fazer visitas guiadas para conhecer os salões, camarotes e o imponente salão nobre, onde ocorrem exposições artísticas.
+    </p>
+  </div>
+</section>
+
+<section class="tourist-spot">
+  <div class="images">
+    <img src="imagens/palacio_rio_negro_1.jpg" alt="Palácio Rio Negro - Vista Frontal" />
+    <img src="imagens/palacio_rio_negro_2.jpg" alt="Palácio Rio Negro - Jardim" />
+  </div>
+  <div class="content">
+    <h2>Palácio Rio Negro</h2>
+    <p>
+      Construído em 1903, o Palácio Rio Negro já foi residência oficial dos governadores do Amazonas. 
+      Hoje, é um centro cultural que abriga exposições de arte, eventos e visitas guiadas. 
+      Os jardins são um convite para caminhadas tranquilas, e o interior preserva o charme histórico da época do Ciclo da Borracha.
+    </p>
+  </div>
+</section>
+
+<section class="tourist-spot">
+  <div class="images">
+    <img src="imagens/musa_1.jpg" alt="MUSA - Torre de Observação" />
+    <img src="imagens/musa_2.jpg" alt="MUSA - Trilhas na Floresta" />
+  </div>
+  <div class="content">
+    <h2>MUSA - Museu da Amazônia</h2>
+    <p>
+      O MUSA é um museu vivo dentro da floresta amazônica. 
+      Lá, os visitantes podem explorar trilhas na floresta, aprender sobre a fauna e flora local e ainda subir na torre de observação de 42 metros, que proporciona uma vista espetacular do dossel da floresta. 
+      O museu também promove oficinas, exposições e eventos voltados para a preservação ambiental.
+    </p>
+  </div>
+</section>
+
+<section class="tourist-spot">
+  <div class="images">
+    <img src="imagens/ponta_negra_1.jpg" alt="Ponta Negra - Orla" />
+    <img src="imagens/ponta_negra_2.jpg" alt="Ponta Negra - Praia" />
+  </div>
+  <div class="content">
+    <h2>Ponta Negra</h2>
+    <p>
+      A Ponta Negra é uma das áreas mais populares de Manaus, com uma praia fluvial às margens do Rio Negro. 
+      O local é perfeito para caminhar, praticar esportes e desfrutar dos quiosques e restaurantes da orla. 
+      Durante o pôr do sol, o cenário se torna ainda mais espetacular, atraindo turistas e locais para apreciar a vista.
+    </p>
+  </div>
+</section>
+
+
+  </main>
+
+  <footer>
+    <p>© 2025 Viagens ao Amazonas. Todos os direitos reservados.</p>
+    <p>Contato: contato@viagensamazonas.com.br</p>
+  </footer>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', !expanded);
+      navLinks.classList.toggle('show');
+    });
+  </script>
+
+</body>
+</html>
